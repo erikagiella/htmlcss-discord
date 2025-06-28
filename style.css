@@ -1,0 +1,75 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dis-primary: #3161e0;
+    --dis-light: #ffffff;
+    --dis-dark: #000000;
+}
+
+
+
+/* region debug styles*/
+.debug * {
+    border: 1px dashed red;
+}
+
+.debug .container {}
+
+.debug .logo,
+.debug .nav_bar,
+{
+background-color: rgb(92, 236, 255);
+}
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.sp-bet {
+    justify-content: space-between;
+}
+
+.width80 {
+    max-width: 80%;
+}
+
+.f-row {
+    flex-direction: row;
+}
+
+.f-column {
+    flex-direction: column;
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+
+/*--header region*/
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--dis-primary);
+}
+
+.nav_bar span {
+    color: var(--dis-light);
+    margin: 20px;
+    font-size: 1.1em;
+}
+
+.login_btn {
+    color: var(--dis-dark);
+    background-color: var(--dis-light);
+    font-weight: bold;
+    border: none;
+}
