@@ -9,6 +9,7 @@
     --dis-light: #ffffff;
     --dis-dark: #000000;
     --dis-main-bg: #f6f6f6;
+    --dis-secondary: #8ea1e1;
 }
 
 body {
@@ -72,27 +73,38 @@ body {
 }
 
 .btn {
-    padding: 8px 12px;
+    padding: 10px 18px;
     border-radius: 20px;
 }
 
 .light_btn {
     color: var(--dis-dark);
     background-color: var(--dis-light);
-    font-weight: bold;
     border: none;
 }
 
 .dark_btn {
     color: var(--dis-light);
     background-color: var(--dis-dark);
-    font-weight: bold;
     border: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.wave {
+    background-image: url(./img/wave.svg);
+    height: 40px;
+
 }
 
 .main_bg {
     background-color: var(--dis-main-bg);
-    border-image: url(./img/wave.svg);
+}
+
+.bg_rot {
+    transform: rotate(180deg);
 }
 
 /* general styles region */
@@ -165,6 +177,10 @@ header {
     padding: 10px;
 }
 
+.card_image img {
+    max-width: 100%;
+}
+
 .card_body {
     padding: 40px;
     width: 40%;
@@ -180,11 +196,30 @@ header {
     font-size: 1.1rem;
 }
 
-.last_card {
+.last_sect {
     text-align: center;
-
 }
 
-.last_card * {
+.last_sect * {
     margin-bottom: 10px;
+}
+
+.last_sect h1 {
+    font-size: 3rem;
+}
+
+.last_sect p {
+    font-size: 1rem;
+}
+
+.last_sect h3 {
+    font-size: 1.5rem;
+    background-image: url(./img/stars.svg);
+    padding: 30px 30px 0px 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#last_sect_btn {
+    background-color: var(--dis-secondary);
 }
