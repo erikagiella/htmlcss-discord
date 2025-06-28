@@ -19,10 +19,8 @@
 
 .debug .container {}
 
-.debug .logo,
-.debug .nav_bar,
-{
-background-color: rgb(92, 236, 255);
+.debug div div {
+    background-color: rgb(92, 236, 255);
 }
 
 
@@ -57,7 +55,7 @@ background-color: rgb(92, 236, 255);
 /*--header region*/
 header {
     text-align: center;
-    padding: 10px;
+    padding: 8px;
     background-color: var(--dis-primary);
 }
 
