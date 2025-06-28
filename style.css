@@ -8,24 +8,30 @@
     --dis-primary: #3161e0;
     --dis-light: #ffffff;
     --dis-dark: #000000;
+    --dis-main-bg: #f6f6f6;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
-
-/* region debug styles*/
+/* debug styles region*/
 .debug * {
     border: 1px dashed red;
 }
 
 .debug .container {}
 
-.debug div div {
+/*.debug div div {
     background-color: rgb(92, 236, 255);
-}
+}*/
+
+/*end  debug styles region*/
 
 
 
-
+/* general styles region */
 
 .container {
     display: flex;
@@ -44,12 +50,16 @@
     max-width: 50%;
 }
 
-.width80 {
-    max-width: 80%;
+.width70 {
+    max-width: 70%;
 }
 
 .f-row {
     flex-direction: row;
+}
+
+.f-row-rev {
+    flex-direction: row-reverse;
 }
 
 .f-column {
@@ -61,8 +71,30 @@
     border-radius: 20px;
 }
 
+.light_btn {
+    color: var(--dis-dark);
+    background-color: var(--dis-light);
+    font-weight: bold;
+    border: none;
+}
 
-/*--header region*/
+.dark_btn {
+    color: var(--dis-light);
+    background-color: var(--dis-dark);
+    font-weight: bold;
+    border: none;
+}
+
+.main_bg {
+    background-color: var(--dis-main-bg);
+}
+
+/* general styles region */
+
+
+
+
+/* header region */
 header {
     text-align: center;
     padding: 8px;
@@ -75,12 +107,8 @@ header {
     font-size: 1.1em;
 }
 
-.login_btn {
-    color: var(--dis-dark);
-    background-color: var(--dis-light);
-    font-weight: bold;
-    border: none;
-}
+/* end header region */
+
 
 /* banner region */
 
@@ -96,10 +124,50 @@ header {
 
 .banner h1 {
     font-size: 3rem;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .banner p {
     font-size: 1.2rem;
     line-height: 25px;
+    margin: 20px;
+}
+
+.banner span {
+    margin: 8px;
+}
+
+.banner button {
+    padding: 10px 20px;
+}
+
+/* end banner region */
+
+
+/*main region*/
+
+.card {
+    align-items: center;
+    gap: 2rem;
+    padding: 30px;
+}
+
+.card_image {
+    width: 80%;
+    margin: 30px;
+
+}
+
+.card_body {
+    margin: 30px;
+}
+
+.card_title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card_text {
+    font-size: 1.1rem;
 }
