@@ -25,13 +25,23 @@
 
 
 
+
+
 .container {
     display: flex;
     align-items: center;
 }
 
-.sp-bet {
+.jc-sp-bet {
     justify-content: space-between;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.width50 {
+    max-width: 50%;
 }
 
 .width80 {
@@ -70,4 +80,26 @@ header {
     background-color: var(--dis-light);
     font-weight: bold;
     border: none;
+}
+
+/* banner region */
+
+.banner {
+    background-image: url(./img/jumbo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 550px;
+    color: var(--dis-light);
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    line-height: 25px;
 }
