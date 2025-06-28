@@ -10,6 +10,7 @@
     --dis-dark: #000000;
     --dis-main-bg: #f6f6f6;
     --dis-secondary: #8ea1e1;
+    --dis-dark-bg: #23272a;
 }
 
 body {
@@ -22,11 +23,12 @@ body {
     border: 1px dashed red;
 }
 
-.debug .container {}
 
 /*.debug div div {
     background-color: rgb(92, 236, 255);
 }*/
+
+
 
 /*end  debug styles region*/
 
@@ -50,6 +52,10 @@ body {
 
 .jc-center {
     justify-content: center;
+}
+
+jc-f-start {
+    justify-content: flex-start;
 }
 
 .width50 {
@@ -107,6 +113,14 @@ body {
     transform: rotate(180deg);
 }
 
+.secondary {
+    color: var(--dis-secondary);
+}
+
+.light {
+    color: var(--dis-light);
+}
+
 /* general styles region */
 
 
@@ -129,9 +143,11 @@ header {
     vertical-align: middle;
 }
 
+
 .padY60 {
     padding: 60px 0px;
 }
+
 
 /* end header region */
 
@@ -222,4 +238,32 @@ header {
 
 #last_sect_btn {
     background-color: var(--dis-secondary);
+}
+
+/*end main region*/
+
+
+/*footer region*/
+footer {
+    background-color: var(--dis-dark-bg);
+    min-height: 660px;
+}
+
+footer * {
+    margin-bottom: 10px;
+}
+
+#footer_nav_bar {
+    align-items: flex-start;
+    padding: 60px 0px 15px 0px;
+    border-bottom: 1px solid var(--dis-secondary);
+
+}
+
+.ft-1 {
+    width: 30%;
+}
+
+.ft-2 {
+    width: 15%;
 }
