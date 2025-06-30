@@ -95,6 +95,10 @@ body {
     border: none;
 }
 
+.secondary_btn {
+    background-color: var(--dis-secondary);
+}
+
 .bold {
     font-weight: bold;
 }
@@ -240,7 +244,6 @@ header {
 
 #last_sect_btn {
     margin-top: 20px;
-    background-color: var(--dis-secondary);
 }
 
 /*end main region*/
