@@ -54,7 +54,7 @@ body {
     justify-content: center;
 }
 
-jc-f-start {
+.jc-f-start {
     justify-content: flex-start;
 }
 
@@ -101,7 +101,7 @@ jc-f-start {
 
 .wave {
     background-image: url(./img/wave.svg);
-    height: 40px;
+    height: 70px;
 
 }
 
@@ -120,6 +120,8 @@ jc-f-start {
 .light {
     color: var(--dis-light);
 }
+
+
 
 /* general styles region */
 
@@ -237,6 +239,7 @@ header {
 }
 
 #last_sect_btn {
+    margin-top: 20px;
     background-color: var(--dis-secondary);
 }
 
@@ -250,7 +253,7 @@ footer {
 }
 
 footer * {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 #footer_nav_bar {
@@ -262,8 +265,47 @@ footer * {
 
 .ft-1 {
     width: 30%;
+    padding-right: 30px;
+}
+
+.ft-1 * {
+    margin: 0;
+}
+
+.ft-1 h2 {
+    margin-bottom: 20px;
 }
 
 .ft-2 {
     width: 15%;
+}
+
+#flag_ita {
+    height: 20px;
+}
+
+#language span {
+    margin-left: 5px;
+}
+
+.social-icon {
+    padding-top: 20px;
+}
+
+.fa {
+    padding: 4px;
+    font-size: 20px;
+    text-align: left;
+    text-decoration: none;
+    margin: 5px 5px 0px;
+}
+
+.fa-facebook {
+    color: var(--dis-dark-bg);
+    background-color: var(--dis-light);
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: center;
+    height: 20px;
+    width: 20px;
 }
