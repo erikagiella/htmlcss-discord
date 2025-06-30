@@ -1,5 +1,5 @@
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -267,8 +267,8 @@ footer * {
 }
 
 .ft-1 {
-    width: 30%;
-    padding-right: 30px;
+    width: 40%;
+    padding-right: 60px;
 }
 
 .ft-1 * {
@@ -295,20 +295,11 @@ footer * {
     padding-top: 20px;
 }
 
-.fa {
+
+.social-icon .fa-brands {
     padding: 4px;
-    font-size: 20px;
+    font-size: 28px;
     text-align: left;
     text-decoration: none;
-    margin: 5px 5px 0px;
-}
-
-.fa-facebook {
-    color: var(--dis-dark-bg);
-    background-color: var(--dis-light);
-    border-radius: 50%;
-    text-align: center;
-    vertical-align: center;
-    height: 20px;
-    width: 20px;
+    margin: 5px;
 }
